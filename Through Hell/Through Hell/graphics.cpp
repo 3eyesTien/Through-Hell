@@ -32,6 +32,7 @@ SDL_Surface* Graphics::loadImage(const std::string &filePath)
 
 void Graphics::blitSurface(SDL_Texture* texture, SDL_Rect* sourceRectangle, SDL_Rect* destinationRectangle)
 {
+	//Render a copy (sourceRectangle) of a portion of the texture to the current rendering target(renderer) at the destinationRectangle.
 	SDL_RenderCopy(this->renderer, texture, sourceRectangle, destinationRectangle);
 }
 

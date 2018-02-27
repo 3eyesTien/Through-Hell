@@ -4,6 +4,7 @@
 
 #include "game.h"
 #include "graphics.h"
+#include "sprite.h"
 
 #include <SDL.h>
 #include <algorithm>
@@ -28,6 +29,7 @@ void Game::gameLoop()
 {
 	Graphics graphics;
 	SDL_Event event;
+	this->sprite = Sprite(graphics, "Assets/aerial_knee_frames cut.png", 65, 3, 19, 36, 100, 100);
 
 	/*Gets number of milliseconds since the SDL library was initialized.
 	 *This is our clock that we use to reference the change in time (delta time)
@@ -56,7 +58,7 @@ void Game::gameLoop()
 void Game::draw(Graphics &graphics)
 {
 	graphics.clear();
-
+	this->sprite.draw(graphics, 100, 100);
 	graphics.flip();	//flip() the surface/buffer to reveal the drawn frame
 }
 
