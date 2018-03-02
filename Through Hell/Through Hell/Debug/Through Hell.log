@@ -1,4 +1,14 @@
-﻿  game.cpp
-c:\users\tien\documents\github\through hell\through hell\through hell\game.cpp(50): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-c:\users\tien\documents\github\through hell\through hell\through hell\game.cpp(31): warning C4101: 'event': unreferenced local variable
+﻿  animatedSprite.cpp
+c:\users\tien\documents\github\through hell\through hell\through hell\animatedsprite.cpp(128): warning C4018: '<': signed/unsigned mismatch
+c:\users\tien\documents\github\through hell\through hell\through hell\animatedsprite.cpp(154): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\tien\documents\github\through hell\through hell\through hell\animatedsprite.cpp(155): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\tien\documents\github\through hell\through hell\through hell\animatedsprite.cpp(162): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\tien\documents\github\through hell\through hell\through hell\animatedsprite.cpp(163): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  Compiling...
+  sprite.cpp
+c:\users\tien\documents\github\through hell\through hell\through hell\sprite.cpp(31): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+c:\users\tien\documents\github\through hell\through hell\through hell\sprite.cpp(31): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  graphics.cpp
+  Generating Code...
   Through Hell.vcxproj -> C:\Users\Tien\Documents\GitHub\Through Hell\Through Hell\Debug\Through Hell.exe

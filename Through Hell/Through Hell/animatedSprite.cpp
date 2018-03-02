@@ -18,10 +18,11 @@ AnimatedSprite::AnimatedSprite(Graphics &graphics, const std::string &filePath, 
 	timeElapsed(0)	// Initialize at 0. Sometimes when you don't it starts as a ridiculously high negative number
 {}
 
-void AnimatedSprite::addAnimation(int frames, int x, int y, std::string name, int width, int height, Vector2 offset) {
-	std::vector<SDL_Rect> rectangles;	//Tamp var to hold rectangles that have the sprites facing right
+void AnimatedSprite::addAnimation(int frames, std::string name, int x, int y,  int width, int height, Vector2 offset) {
+	std::vector<SDL_Rect> rectangles;	//Temp var to hold rectangles that have the sprites facing right
 
 	//Add file i/o right here
+
 	//Create animations and hitboxes from text scripts
 	//Pseudo code:
 	/*
@@ -30,6 +31,23 @@ void AnimatedSprite::addAnimation(int frames, int x, int y, std::string name, in
 	Scan the file for how many [Begin Frame] counts there are
 	set int frames = [Begin Frame] count
 	*/
+	
+	/* int count = 0
+	 * do
+	 {
+		string line;
+		getline(line, script name)
+		
+		if(line contains "[End Frame]) { count++;}
+		else
+		{
+			if(line contains "SourceX") {getSourceX(line);}
+			if(line contains "SourceY") {getSourceY(line);}
+			if(line contains "Width") {getSourceWidth(line);}
+			if(line contains "Height") {getSourceHeight(line);}
+		}
+	 }while(count < frames);
+	 */
 
 	for (int i = 0; i < frames; i++)
 	{

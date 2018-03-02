@@ -20,6 +20,6 @@ private:
 	void gameLoop();
 	void draw(Graphics &graphics);
 	void update(float elapsedTime);
-	Sprite sprite;
+	Sprite knee;
 };
 #endif

@@ -42,7 +42,7 @@ protected:
 	//This is how we add animations to our list of animations
 	// int frames = # of frames in the animation
 	// int x, int y is where on the spritesheet the animation starts
-	void addAnimation(int frames, int x, int y, std::string name, int width, int height, Vector2 offset);
+	void addAnimation(int frames, std::string name, int x, int y,  int width, int height, Vector2 offset);
 
 	/* void resetAnimations
 	 * Resets all animations associated with this sprite
